@@ -1,29 +1,31 @@
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+var btn = document.querySelector("#button");
 
-var randomDiceImage1 = "dice" + randomNumber1 + ".png";
+btn.addEventListener("click", () => {
+  var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
-var randomImageSource1 = "images/" + randomDiceImage1;
+  var randomDiceImage1 = "dice" + randomNumber1 + ".png";
 
-var image1 = document.querySelectorAll("img")[0];
+  var randomImageSource1 = "images/" + randomDiceImage1;
 
-image1.setAttribute("src", randomImageSource1);
+  var image1 = document.querySelectorAll("img")[0];
 
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+  image1.setAttribute("src", randomImageSource1);
 
-var randomDiceImage2 = "dice" + randomNumber2 + ".png";
+  var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
-var randomImageSource2 = "images/" + randomDiceImage2;
+  var randomDiceImage2 = "dice" + randomNumber2 + ".png";
 
-var image2 = document.querySelectorAll("img")[1];
+  var randomImageSource2 = "images/" + randomDiceImage2;
 
-image2.setAttribute("src", randomImageSource2);
+  var image2 = document.querySelectorAll("img")[1];
 
-if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player 1 Win";
-}
-else if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player 2 Win";
-}
-else {
+  image2.setAttribute("src", randomImageSource2);
+
+  if (randomNumber1 > randomNumber2) {
+    document.querySelector("h1").innerHTML = "Player  Win";
+  } else if (randomNumber1 < randomNumber2) {
+    document.querySelector("h1").innerHTML = "CPU Win";
+  } else {
     document.querySelector("h1").innerHTML = "Draw";
-}
+  }
+});
