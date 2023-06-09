@@ -32,10 +32,29 @@ img {
   width: 80%;
 }
 
+button{
+  color: white;
+  font-size: large;
+  font-weight: 300;
+  background-color: #232931;
+  padding: 10px 8px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button:hover{
+  border: 1px solid white;
+}
+
 footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+a{
+  text-decoration: none;
+  color: #4ECCA3;
 }
